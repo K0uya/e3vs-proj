@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>E3VS-Bench: A Benchmark for Viewpoint-Dependent Active Perception in 3D Gaussian Splatting Scenes</title>
+  <link rel="icon" type="image/x-icon" href="">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h1 class="title is-2 publication-title" style="font-size: 2.4rem;">E3VS-Bench: A Benchmark for Viewpoint-Dependent <br>Active Perception in 3D Gaussian Splatting Scenes</h1>
+        <div class="is-size-5 publication-authors">
+          <!-- Paper authors -->
+          <span class="author-block">
+            <a>Koya Sakamoto</a><sup>1</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://miyatai.org/">Taiki Miyanishi</a><sup>1</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://dachii-azm.github.io/">Daichi Azuma</a><sup>1</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://shuheikurita.github.io/">Shuhei Kurita</a><sup>2</sup>,
+          </span>
+          <br>
+          <span class="author-block">
+            <a>Shu Morikuni</a><sup>1</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://sites.google.com/view/n-chiba-">Naoya Chiba</a><sup>3</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://bicr.atr.jp/~kawanabe/">Motoaki Kawanabe</a><sup>4</sup>,
+          </span>
+          <span class="author-block">
+            <a href="https://sites.google.com/view/yusuke-iwasawa/">Yusuke Iwasawa</a><sup>1</sup>,
+          </span>
+          <span class="author-block">
+            <a>Yutaka Matsuo</a><sup>1</sup>
+          </span>
+        </div>
+
+        <div class="is-size-5 publication-authors">
+          <span class="author-block"></span><sup>1</sup>The University of Tokyo,</span>
+          <span class="author-block"></span><sup>2</sup>NII,</span>
+          <span class="author-block"></span><sup>3</sup>The University of Osaka,</span>
+          <span class="author-block"></span><sup>4</sup>ATR,</span>
+        </div>
+
+        <div class="column has-text-centered">
+          <div class="publication-links">
+            <!-- Arxiv PDF link -->
+            <span class="link-block">
+              <a href="http://arxiv.org/abs/2604.17969" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Paper</span>
+              </a>
+            </span>
+                
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            <!-- Github link -->
+            <span class="link-block">
+              <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+              <span>Code (Coming Soon)</span>
+              </a>
+            </span>
+
+              <!-- dataset link -->
+              <!-- <span class="link-block">
+                <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon" style="vertical-align: middle; font-size: 20px;">🤗</span>
+                    <span style="vertical-align: middle;">Dataset</span>
+                </a>
+              </span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <div class="content has-text-justified">
+          <p><b>TL;DR</b>: E3VS-Bench is a new benchmark for embodied 3D visual search that requires agents to actively control viewpoints in 6-DoF within photorealistic 3D Gaussian Splatting scenes
+             to gather viewpoint-dependent evidence for question answering.</p>
+            <p class="new-line"></p>
+          <img src="static/figures/teaser.png" alt="teaser" class="blend-img-background center-image" style="width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="container is-max-desktop separator">
+
+<!-- Paper abstract -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            E3VS-Bench is a benchmark designed to evaluate viewpoint-dependent active perception in realistic 3D environments.
+            The benchmark contains 99 photorealistic scenes reconstructed with 3D Gaussian Splatting and 2,014 question-driven episodes that require agents to actively search for visual evidence.
+            Unlike existing benchmarks that rely on static observations or limited motion, agents must plan viewpoints in 6-DoF to resolve occlusions, depth ambiguities, and hidden attributes.
+            Experiments with state-of-the-art VLMs reveal a large performance gap between models and humans, highlighting limitations in active perception and viewpoint planning.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<hr class="container is-max-desktop separator">
+
+<!-- Method -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">E3VS Dataset</h2>
+        <div class="content has-text-justified">
+          <img src="static/figures/samples_per_question_category.png" alt="Question Categories in Our Dataset" class="blend-img-background center-image">
+          <p class="new-line"></p>
+          <p>
+          Our benchmark focuses on six question categories that broadly evaluate an agent's capability in active perception and spatial reasoning.
+          These categories test an agent's ability to 
+          (1) perform Object Search by locating specific items explicitly mentioned in the question, 
+          (2) recognize Object States by identifying conditions such as whether an object is open or closed, which requires the agent to navigate to a viewpoint where the state is clearly observable, 
+          (3) identify Object Attributes to discern physical characteristics and features, 
+          (4) conduct Context-guided Search to find objects based on their functional utility or situational context when the object name itself is not provided, 
+          (5) perform Spatial Reasoning to evaluate relative positions, and size relationships, 
+          and (6) perform Counting to quantify instances of a specific object class within the environment.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<hr class="container is-max-desktop separator">
+
+<!-- Dataset Statistics -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Dataset Statistics</h2>
+        <div class="content has-text-justified">
+          <img src="static/figures/combined_statistics_dense.png" alt="statistics of our proposed dataset" class="blend-img-background center-image">
+          <p class="new-line"></p>
+          <p>
+            <strong>Dataset Statistics:</strong>
+          (a) question category distribution of unique QA pairs classified by GPT 5.1, 
+          (b) scene type distribution,
+          (c) the number of words in each question,
+          and (d) the number of words in each answer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="container is-max-desktop separator">
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">E3VS Results</h2>
+        <div class="content has-text-justified">
+          <img src="static/figures/main_results_v2.png" alt="E3VS Results" class="blend-img-background center-image">
+          <p class="new-line"></p>
+          <p>
+           We evaluate multiple state-of-the-art VLMs and compare their performance with humans. Despite strong 2D reasoning ability, 
+           all models exhibit a substantial gap from humans, revealing fundamental limitations in active perception and coherent viewpoint planning in real-world 3D environment
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="container is-max-desktop separator">
+
+
+<section class="section hero"></section>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Qualitative Results</h2>
+      <div class="custom_slider w-slider" data-autoplay="true" data-duration="800">
+        <!-- スライドを包むマスクエリア -->
+        <div class="mask w-slider-mask" id="w-slider-mask-0">
+          
+          <!-- 各スライド -->
+          <div class="slide w-slide" aria-label="2 of 9" role="group">
+            <div class="div-block-9">
+              <div class="video_class w-embed">
+                <video width="100%" height="auto" muted controls loop preload="metadata">
+                  <source src="static/videos/output_ep140.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide w-slide" aria-label="3 of 9" role="group">
+            <div class="div-block-9">
+              <div class="video_class w-embed">
+                <video width="100%" height="auto" muted controls loop preload="metadata">
+                  <source src="static/videos/output_ep170.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+          <div class="slide w-slide" aria-label="4 of 9" role="group">
+            <div class="div-block-9">
+              <div class="video_class w-embed">
+                <video width="100%" height="auto" muted controls loop preload="metadata">
+                  <source src="static/videos/output_ep201.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+          <div class="slide w-slide" aria-label="5 of 9" role="group">
+            <div class="div-block-9">
+              <div class="video_class w-embed">
+                <video width="100%" height="auto" muted controls loop preload="metadata">
+                  <source src="static/videos/output_ep233.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+          <div class="slide w-slide" aria-label="6 of 9" role="group">
+            <div class="div-block-9">
+              <div class="video_class w-embed">
+                <video width="100%" height="auto" muted controls loop preload="metadata">
+                  <source src="static/videos/output_ep263.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+          <div class="slide w-slide" aria-label="7 of 9" role="group">
+            <div class="div-block-9">
+              <div class="video_class w-embed">
+                <video width="100%" height="auto" muted controls loop preload="metadata">
+                  <source src="static/videos/output_ep335.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arrow left-arrow" onclick="previousSlide()">&#9664;</div>
+        <div class="arrow right-arrow" onclick="nextSlide()">&#9654;</div>
+      </div>
+    </div>
+  </div>
+  <div class="dots-container is-max-desktop"></div>
+</div>
+</section>
+
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      <!-- @misc{2026e3vs,
+        title={E3VS-Bench: A Benchmark for Viewpoint-Dependent Active Perception in 3D Gaussian Splatting Scenes}, 
+        author={},
+        year={2026},
+        eprint={},
+      } -->
+      @misc{sakamoto2026e3vsbench,
+            title={E3VS-Bench: A Benchmark for Viewpoint-Dependent Active Perception in 3D Gaussian Splatting Scenes}, 
+            author={Koya Sakamoto and Taiki Miyanishi and Daichi Azuma and Shuhei Kurita and Shu Morikuni and Naoya Chiba and Motoaki Kawanabe and Yusuke Iwasawa and Yutaka Matsuo},
+            year={2026},
+            eprint={2604.17969},
+            archivePrefix={arXiv},
+            primaryClass={cs.CV},
+            url={https://arxiv.org/abs/2604.17969}, 
+      }
+    </code></pre>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var carousels = bulmaCarousel.attach('.carousel1', {
+      autoplay: false, // Disable the automatic page switch
+    });
+  });
+</script>
+
+<script>
+  let currentSlide = 0; // 現在のスライドのインデックス
+  const slides = document.querySelectorAll('.w-slide'); // 全スライドを取得
+  const totalSlides = slides.length; // スライドの総数
+
+  const sliderMask = document.getElementById('w-slider-mask-0'); // マスク部分を取得
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides; // 次のスライドに移動
+    updateSlidePosition();
+  }
+
+  function previousSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides; // 前のスライドに移動
+    updateSlidePosition();
+  }
+
+  function updateSlidePosition() {
+    const newTransformValue = `translateX(-${currentSlide * 100}%)`;
+    sliderMask.style.transform = newTransformValue; // スライド位置を更新
+    
+    // すべての動画を一時停止してリセット
+    const allVideos = document.querySelectorAll('.w-slide video');
+    allVideos.forEach(video => {
+      video.pause();
+      video.currentTime = 0;
+    });
+    
+    // 現在のスライドの動画を再生
+    const currentVideo = slides[currentSlide].querySelector('video');
+    if (currentVideo) {
+      currentVideo.currentTime = 0;
+      currentVideo.play();
+    }
+    
+    updateDots(); // ドットの状態を更新
+  }
+
+  function createDots() {
+    const dotsContainer = document.querySelector('.dots-container');
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      dot.addEventListener('click', () => {
+        currentSlide = i; // クリックされたインデックスを設定
+        updateSlidePosition(); // スライドを更新
+      });
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function updateDots() {
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentSlide);
+    });
+  }
+
+  // 初期化
+  createDots();
+  updateDots();
+  
+  // 最初の動画を再生
+  const firstVideo = slides[0].querySelector('video');
+  if (firstVideo) {
+    firstVideo.currentTime = 0;
+    firstVideo.play();
+  }
+  
+  // 自動再生の設定（10秒ごとに次のスライドへ）
+  setInterval(() => {
+    nextSlide();
+  }, 10000); // 10000ms = 10秒
+</script>
+
+
+<style>
+  .container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+  }
+
+  .custom-width {
+    width: 50%;
+  }
+</style>
+
+<style>
+  .enlarged-image {
+    width: 120%;
+    height: 120%;
+  }
+</style>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
